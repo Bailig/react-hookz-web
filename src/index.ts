@@ -44,6 +44,7 @@ export {
   IUseValidatorReturn,
 } from './useValidator/useValidator';
 export { useCounter, CounterActions } from './useCounter/useCounter';
+export { useDefault } from './useDefault/useDefault';
 
 // Navigator
 export {
