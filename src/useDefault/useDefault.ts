@@ -9,7 +9,7 @@ import { useSafeState } from '..';
  */
 export function useDefault<S>(
   defaultValue: S,
-  initialValue: S | (() => S)
+  initialValue?: S | (() => S)
 ): [S, Dispatch<SetStateAction<S | null | undefined>>] {
   const [value, setValue] = useSafeState<S | undefined | null>(initialValue);
 
