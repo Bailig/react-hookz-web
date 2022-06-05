@@ -129,6 +129,8 @@ Coming from `react-use`? Check out our
     — Like `useSafeState` but its state setter is throttled.
   - [**`useValidator`**](https://react-hookz.github.io/web/?path=/docs/state-usevalidator--example)
     — Performs validation when any of provided dependencies has changed.
+  - [**`useDefault`**](https://react-hookz.github.io/web/?path=/docs/state-usedefault--example)
+    — Returns the default value when the state is null or undefined.
 
 - #### Navigator
 

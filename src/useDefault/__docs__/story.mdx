@@ -1,0 +1,39 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+import { Example } from './example.stories';
+import { ImportPath } from '../../storybookUtil/ImportPath';
+
+<Meta title="State/useDefault" component={Example} />
+
+# useDefault
+
+React state hook that returns the default value when the state is null or undefined.
+
+##### Example
+
+<Canvas>
+  <Story inline story={Example} />
+</Canvas>
+
+## Reference
+
+```ts
+import { Dispatch, SetStateAction } from 'react';
+
+export function useDefault<S>(
+  defaultValue: S,
+  initialValue?: S | (() => S)
+): [S, Dispatch<SetStateAction<S | null | undefined>>];
+```
+
+#### Importing
+
+<ImportPath />
+
+#### Arguments
+
+- **defaultValue** _`S (any)`_ - Value that will be returned when the state is undefined or null.
+- **initialValue** _`S (any)`_ - Value that will be returned during the initial render.
+
+#### Return
+
+Returns the default value when the state is null or undefined, and the return type is exactly like React useState.
